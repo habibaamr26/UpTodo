@@ -73,6 +73,8 @@ Widget item(context, TaskModel list) => GestureDetector(
                   // title text
                   Text(
                     "${list.title}",
+                     maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     style: Theme.of(context)
                         .textTheme
                         .displayLarge!
@@ -99,6 +101,8 @@ Widget item(context, TaskModel list) => GestureDetector(
                   // note text
                   Text(
                     "${list.note}",
+                     maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     style: Theme.of(context)
                         .textTheme
                         .displayLarge!
