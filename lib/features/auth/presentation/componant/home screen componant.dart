@@ -71,14 +71,16 @@ Widget item(context, TaskModel list) => GestureDetector(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // title text
-                  Text(
-                    "${list.title}",
-                     maxLines: 1,
+                  Expanded(
+                    child: Text(
+                      "${list.title}",
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context)
-                        .textTheme
-                        .displayLarge!
-                        .copyWith(fontSize: 24),
+                      style: Theme.of(context)
+                          .textTheme
+                          .displayLarge!
+                          .copyWith(fontSize: 24),
+                    ),
                   ),
                   // start and end time
                   Expanded(
@@ -99,14 +101,16 @@ Widget item(context, TaskModel list) => GestureDetector(
                     ),
                   ),
                   // note text
-                  Text(
-                    "${list.note}",
-                     maxLines: 1,
+                 Expanded(
+                    child: Text(
+                      "${list.note}",
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context)
-                        .textTheme
-                        .displayLarge!
-                        .copyWith(fontSize: 26),
+                      style: Theme.of(context)
+                          .textTheme
+                          .displayLarge!
+                          .copyWith(fontSize: 26),
+                    ),
                   ),
                 ],
               ),
